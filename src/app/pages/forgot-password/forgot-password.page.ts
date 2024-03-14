@@ -23,7 +23,7 @@ email:any
   }
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Your reset password link has been sent on your email',
+      message: 'El link para reiniciar tu Contraseña ha sido enviado al email proporcionadol',
       duration: 2000, // Duration in milliseconds
       position: 'bottom' // Position of the toast (top, bottom, middle)
     });
