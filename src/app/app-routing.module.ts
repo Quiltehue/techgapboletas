@@ -34,7 +34,23 @@ const routes: Routes = [
   {
     path: 'confirmation',
     loadChildren: () => import('./pages/confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
+  },  {
+    path: 'ingreboleta',
+    loadChildren: () => import('./ingreboleta/ingreboleta.module').then( m => m.IngreboletaPageModule)
   },
+  {
+    path: 'reportes',
+    loadChildren: () => import('./reportes/reportes.module').then( m => m.ReportesPageModule)
+  },
+  {
+    path: 'tutoriales',
+    loadChildren: () => import('./tutoriales/tutoriales.module').then( m => m.TutorialesPageModule)
+  },
+  {
+    path: 'administracion',
+    loadChildren: () => import('./administracion/administracion.module').then( m => m.AdministracionPageModule)
+  },
+
 ];
 
 @NgModule({

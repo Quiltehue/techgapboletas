@@ -1,3 +1,19 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="logo-amplify"></ion-icon>
+      APP TECH-GAP
+    </ion-title>
+    <br>
+    
+    <ion-img src="assets/logo.png"/>
+
+  </ion-toolbar>
+
+  <p style="text-align:center"><i> "Sistema de Reportes e Informes TECH-GAP" </i></p>
+</ion-header>
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -6,8 +22,8 @@
   </ion-header>
 
   <div class="header">
-    <ion-title class="title" size="large">S APP</ion-title>
-    <p class="subtitle">Formulario Creación de cuenta</p>
+    <ion-title class="title" size="large">Formulario Creación de cuenta</ion-title>
+    <p class="subtitle">Ingresa tus datos</p>
   </div>
   <form [formGroup]="ionicForm" novalidate>
     <div class="ion-padding">
@@ -62,7 +78,7 @@
     </ion-button>
 
       <div class="loginLink">
-        <p class="p">Usuario ya registrado <a [routerLink]="['/login']" style="color: #FFC33F">Log in</a></p>
+        <p class="p">Usuario ya registrado <a [routerLink]="['/login']" style="color: #FFC33F">Ingresar</a></p>
       </div>
     </div>
 

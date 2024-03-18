@@ -1,17 +1,82 @@
-<ion-header [translucent]="true" >
-  <ion-toolbar >
-    <ion-title slot="start">
-      Blank
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="logo-amplify"></ion-icon>
+      APP TECH-GAP
     </ion-title>
-    <ion-button slot="end" fill="clear" (click)="signOut()">Sign Out</ion-button>
-
+    <ion-button slot="end" fill="clear" (click)="signOut()">Salir</ion-button>
+  
   </ion-toolbar>
+  <ion-img src="../../assets/logo.png" ></ion-img>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="container">
-    <h1>HI</h1>
-    <strong>{{email}}</strong>
-  </div>
-</ion-content>
+  <ion-header collapse="condense">
+    
+    <ion-toolbar>
+      <ion-title size="large">Menú Selección</ion-title>
+      <ion-img src="../../assets/logo.png" ></ion-img>
+    </ion-toolbar>
+    
+  </ion-header>
   
+  <br>
+
+
+  
+
+  
+  <ion-content>
+    <div id="container">
+      <h1>Bienvenido {{email}} al Sistema de Reportes e Informes TECH-GAP</h1>
+      <img src="../../assets/indi.png" >
+    </div>
+  </ion-content>
+ 
+
+ 
+  <br>
+  <br> <br>
+  <br>
+  <ion-content class="ion-text-center">
+  
+ 
+
+
+</ion-content>
+<br>
+
+
+
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button routerLink="/ingreboleta" >
+        <ion-icon aria-hidden="true" name="calculator-outline"></ion-icon>
+        <ion-label>Ingresar Boletas</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button routerLink="/reportes">
+        <ion-icon aria-hidden="true" name="analytics-outline"></ion-icon>
+        <ion-label>Reportes</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button routerLink="/tutoriales">
+        <ion-icon aria-hidden="true" name="book-outline"></ion-icon>
+        <ion-label>Tutoriales</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button routerLink="/administracion">
+        <ion-icon aria-hidden="true" name="build-outline"></ion-icon>
+        <ion-label>Administración</ion-label>
+      </ion-tab-button>
+ 
+
+   
+  </ion-tab-bar>
+
+    
+  
+  </ion-tabs>

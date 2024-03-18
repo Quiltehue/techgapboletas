@@ -54,7 +54,7 @@ export class LoginPage implements OnInit {
         this.router.navigate(['/home'])
       }
     } else {
-      return console.log('Please provide all the required values!');
+      return console.log('Por favor ingresar todos los datos requeridos!');
     }
 
   }
